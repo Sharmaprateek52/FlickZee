@@ -1,0 +1,22 @@
+<div class="container bgWhite mt-2">
+    <div class="row">
+        <div class="list-item" *ngFor="let movie of moviesList">
+            <h2>
+                {{ movie['Movie Name'] }}
+            </h2>
+            <div class="item row">
+                <div class="movie-img">
+                    <img src="assets/download.jpeg" />
+                </div>
+                <div class="movie-info">
+                    <span>Available On</span>
+                    <div class="icons-info">
+                        <img src="assets/3.jpeg">
+                        <img src="assets/2.png">
+                        <img src="assets/1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

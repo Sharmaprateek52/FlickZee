@@ -1,0 +1,22 @@
+<div class="position-relative">
+    <nav class="navbar navbar-light">
+        <div class="w-25 icon">
+            <img src="assets/fzlogo.png" />
+        </div>
+        <form class="form-inline w-100" (ngSubmit)="onSearch()">
+            <div class="w-100 search-container">
+                <input class="form-control w-100" type="search" placeholder="Search a Movie or TV Show"
+                    aria-label="Search" (input)="autoComplete()" [(ngModel)]="searchText"
+                    [ngModelOptions]="{standalone: true}">
+                <button type='button' class="btn search" (click)="onSearch()"><img src="assets/search.svg" /></button>
+            </div>
+        </form>
+    </nav>
+    <div class="autocomplete position-absolute" *ngIf="showAutoComplete && searchText.length">
+        <ul class="autocomplete-style">
+            <li *ngFor="let movieName of autoCompleteSearchkeywords" (click)="onSearchAutoComplete(movieName)">
+                {{movieName['Movie Name']}}
+            </li>
+        </ul>
+    </div>
+</div>

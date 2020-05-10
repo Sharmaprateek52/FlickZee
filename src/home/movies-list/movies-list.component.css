@@ -1,0 +1,51 @@
+.list-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  border-bottom: 1px solid #979797;
+  padding: 10px 0;
+  letter-spacing: -0.1rem;
+}
+
+.list-item h2 {
+  line-height: 1.2;
+  font-size: 20px;
+  color: #182531;
+  padding: 0 0 0 2%;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.item {
+  margin: 0 0 0 2%;
+}
+
+.movie-img {
+  width: 12%;
+}
+.movie-img img {
+  width: 100%;
+}
+.movie-info {
+  width: 85%;
+}
+
+.movie-info span {
+    padding: 1rem;
+    font-weight: 500;
+}
+.icons-info {
+    padding: 1rem;
+}
+.icons-info img {
+    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,44 @@
+.navbar {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #182531;
+}
+
+.search-container {
+    display: flex;
+}
+.autocomplete {
+    z-index: 100;
+    width: 100%;
+    background: white;
+}
+.autocomplete-style {
+    list-style: none;
+    padding: 1rem;
+}
+.autocomplete-style li {
+    border-bottom: 1px solid#D3D3D3;
+    cursor: pointer;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 10px 0px;
+}
+.icon {
+    height: 40px;
+}
+.form-control {
+    border-radius: 0px;
+}
+.search {
+    line-height: 1.4;
+    border-radius: 0px;
+    background-color: coral;
+} 
+
