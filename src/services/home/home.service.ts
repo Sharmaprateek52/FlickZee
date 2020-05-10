@@ -12,6 +12,6 @@ export class HomeService {
   /** GET movies from search */
   getMovies(searchText?: string) {
     debounceTime(500)
-    return this.httpClient.get(`http://localhost:3000/movies?searchText=${searchText}`);
+    return this.httpClient.get(`https://flickzeeapi.herokuapp.com/movies?searchText=${searchText}`);
   }
 }

@@ -35,8 +35,8 @@ export class HeaderComponent implements OnInit {
     this.clicked.emit(this.searchText);
   }
 
-  onSearchAutoComplete(movieName: string) {
+  onSearchAutoComplete(movieName: Movie) {
     this.showAutoComplete = false;
-    this.clicked.emit(movieName);
+    this.clicked.emit(movieName['Movie Name']);
   }
 }
