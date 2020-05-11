@@ -11,6 +11,7 @@
 
 .search-container {
     display: flex;
+    width: min-content;
 }
 .autocomplete {
     z-index: 100;
@@ -22,6 +23,8 @@
     padding: 1rem;
 }
 .autocomplete-style li {
+    padding: 2px;
+    font-weight: 400;
     border-bottom: 1px solid#D3D3D3;
     cursor: pointer;
 }
